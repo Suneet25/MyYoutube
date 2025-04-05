@@ -12,8 +12,12 @@ const sideNavSlice = createSlice({
     closeSideNav: (state) => {
       state.isSideNavOpen = false;
     },
+    openSideNav: (state) => {
+      state.isSideNavOpen = true;
+    },
   },
 });
 
 export default sideNavSlice.reducer;
-export const { toggleSideNav } = sideNavSlice.actions;
+export const { toggleSideNav, closeSideNav, openSideNav } =
+  sideNavSlice.actions;
